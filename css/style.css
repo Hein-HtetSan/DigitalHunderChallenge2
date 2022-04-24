@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    --Black: #1e1f28;
+    --Red: #f80834;
+    --white: #f1f9f5;
+    --Font-Family: 'Inter', sans-serif;
+    --Open-sans: 'Open Sans', sans-serif;
+}
+
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: vard(--Black);
+}
+
+.h-11vh{
+    height: 11vh;
+}
+.h-13vh{
+    height: 13vh;
+}
+
+.h-15vh{
+    height: 15vh;
+}
+
+.h-20vh{
+    height: 20vh;
+}
+
+.h-80vh{
+    height: 80vh;
+}
+
+/*This is Navbar Styling*/
+
+.dh-brand{
+    font-family: var(--Open-sans);
+    font-weight: 600;
+}
+
+.dh-logo{
+    transform: scale(.7);
+}
+
+.navbar-links > a{
+    text-decoration: none;
+    font-family: var(--Open-sans);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Black);
+    position: relative;
+    transition: .3s ease-in;
+}
+.navbar-links > a::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    margin-top: 33px;
+    border-radius: 10px;
+    background: var(--Red);
+    transition: .5s ease-in-out;
+}
+
+.navbar-links > a:hover{
+    color: var(--Red);
+}
+
+.navbar-links > a:hover::before{
+    width: 100%;
+}
+
+.contact-me{
+    text-decoration: none;
+}
+.phone:hover{
+    color:var(--Red);
+}
+
+.phone{
+    padding-top: 15px;
+    font-family: var(--Open-sans);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--Black);
+    cursor: pointer;
+}
+
+.phone > span{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Red);
+}
+.phone > span:hover{
+    text-decoration: underline;
+}
+
+/*End of styling navbar*/
