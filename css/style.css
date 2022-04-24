@@ -42,7 +42,18 @@ body{
 .h-20vh{
     height: 20vh;
 }
-
+.h-25vh{
+    height: 25vh;
+}
+.h-40vh{
+    height: 40vh;
+}
+.h-50vh{
+    height: 50vh;
+}
+.h-75vh{
+    height: 75vh;
+}
 .h-80vh{
     height: 80vh;
 }
@@ -53,7 +64,9 @@ body{
 .h-89vh-page-one-logo{
     height: 89vh;
 }
-
+.h-40vh-page-two{
+    height: 25vh;
+}
 /*This is Navbar Styling*/
 .mynavbar{
     background-color: var(--Black);
@@ -228,7 +241,7 @@ body{
 .info > h5::before{
     position: absolute;
     content: '';
-    top: 40px;
+    bottom: -20px;
     left: 0;
     width: 40%;
     height: 5px;
@@ -262,6 +275,48 @@ body{
 }
 /*End of Page One info*/
 
+/*Page two info*/
+.title > h2{
+    font-family: var(--Open-sans);
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--white);
+    position: relative;
+}
+.title > h2::before{
+    position: absolute;
+    display: block;
+    content: '';
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background: var(--Red);
+}
+.title-span{
+    z-index: 1;
+}
+
+.title > p{
+    font-family: var(--Open-sans);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: var(--white);
+    position: relative;
+}
+
+.title > p::before{
+    position: absolute;
+    content: '';
+    bottom: -13px;
+    left: 0;
+    width: 20%;
+    height: 4px;
+    background-color: var(--Red);
+}
+/*End of Page two info*/
+
 @media screen and (max-width: 780px) {
     .mynavbar-links{
         display: none;
@@ -273,7 +328,10 @@ body{
         display:none;
     }
     .h-89vh-page-one-logo{
-        height: 60vh;
+        height: 70vh;
+    }
+    .h-40vh-page-two{
+        height: 50vh;
     }
 }
 
@@ -288,6 +346,9 @@ body{
         display:none;
     }
     .h-89vh-page-one-logo{
-        height: 60vh;
+        height: 70vh;
+    }
+    .h-40vh-page-two{
+        height: 50vh;
     }
 }
