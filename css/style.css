@@ -50,6 +50,10 @@ body{
     height: 89vh;
 }
 
+.h-89vh-page-one-logo{
+    height: 89vh;
+}
+
 /*This is Navbar Styling*/
 .mynavbar{
     background-color: var(--Black);
@@ -268,5 +272,8 @@ body{
     }
     .mypage-one{
         display:none;
+    }
+    .h-89vh-page-one-logo{
+        height: 60vh;
     }
 }
