@@ -262,6 +262,20 @@ body{
 }
 /*End of Page One info*/
 
+@media screen and (max-width: 780px) {
+    .mynavbar-links{
+        display: none;
+    }
+    .mycontact-links{
+        display: none;
+    }
+    .mypage-one{
+        display:none;
+    }
+    .h-89vh-page-one-logo{
+        height: 60vh;
+    }
+}
 
 @media screen and (max-width: 380px) {
     .mynavbar-links{
