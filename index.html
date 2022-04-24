@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Hunter</title>
     <!--Logo-->
-    <link rel="icon" href="./img/logo-for-dark.svg">
+    <link rel="icon" href="./img/logo-for-dark copy.svg">
     <!--Css-->
     <link rel="stylesheet" href="./css/style.css">
     <!--Fontawesome Icon-->
@@ -18,19 +18,19 @@
     <div class="container-fluid">
         <div class="row">
             <!--This is Navbar-->
-            <div class="col-12 col-md-12 col-lg-12 border-bottom h-13vh">
+            <div class="mynavbar col-12 col-md-12 col-lg-12 myborder-bottom h-11vh">
                 <div class="row">
                     <!--Logo and Brand-->
-                    <div class="col-2 col-md-2 col-lg-2 d-flex h-13vh ">
-                            <img class="img-fluid dh-logo" src="./img/logo-for-light.svg" alt="Digital Hunter Logo">
+                    <div class="col-5 col-md-2 col-lg-2 d-flex h-11vh ">
+                            <img class="img-fluid dh-logo" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">
                             <p class="pt-2 dh-brand">
                                 Digital <br> Hunter
                             </p>
                     </div>
                     <!--End of Logo and Brand-->
                     <!--Navigation-->
-                    <div class="col-4 col-md-4 col-lg-4 h-13vh">
-                        <div class="navbar-links d-flex align-items-center justify-content-evenly h-13vh">
+                    <div class="col-4 col-md-4 col-lg-4 h-11vh mynavbar-links">
+                        <div class="navbar-links d-flex align-items-center justify-content-evenly h-11vh">
                             <a href="#home" class="home">Home</a>
                             <a href="#about" class="about">About</a>
                             <a href="#content" class="content">Content</a>
@@ -38,8 +38,8 @@
                         </div>
                     </div>
                     <!--End of Navigation-->
-                    <div class="col-5 col-md-5 col-lg-5 h-13vh">
-                        <div class=" d-flex justify-content-end align-items-center h-13vh">
+                    <div class="col-5 col-md-5 col-lg-5 h-11vh mycontact-links">
+                        <div class=" d-flex justify-content-end align-items-center h-11vh">
                             <a href="tel:+95-9-753-479-007" class="contact-me">
                                 <p class="phone">
                                     +95 9 753 479 007 <br>
@@ -48,21 +48,55 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-1 col-md-1 col-lg-1 h-13vh">
-                        
+                    <div class="col-1 col-md-1 col-lg-1 h-11vh mypage-one">
+                        <div class="page-number d-flex justify-content-end h-11vh">
+                            <p class="page-one">01</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--End of Navbar-->
-            <div class="col-12 col-md-6 col-lg-6 order-1 order-md-2 order-lg-2 h-13vh">
-                <div class="page-number d-flex h-13vh">
-                    <p class="page-one">01</p>
+            <!--Page one Info-->
+            <div class="col-1 col-md-1 col-lg-1 d-flex align-items-start justify-content-center h-89vh">
+                <div class="brand-name pt-5 mt-5">
+                    <h5>
+                        Digital Hunter
+                    </h5>
                 </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-6 order-2 order-md-1 order-lg-1 h-89vh d-flex align-items-center justify-content-center">
+                <div class="info p-2 p-lg-5">
+                    <h2>Digital Hunter</h2>
+                    <h5>Front-end web development</h5>
+                    <p class="mt-4 mb-4">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type
+                    </p>
+                    <button class="page-one-btn" type="button">Join now</button>
+                </div>
+            </div>
+            <div class="col-11 col-md-5 col-lg-5 order-1 order-md-2 order-lg-2 h-89vh d-flex align-items-center justify-content-center">
+                <div class="page-one-logo ">
+                    <img class="img-fluid dh-logo2" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">
+                </div>
+            </div>
+            <!--End of Page one Info-->
+            <!--Change Theme Icon and Button Up-->
+            <div class="col-1 col-md-1 col-lg-1 fixed-bottom h-11vh">
+                <div class="change-icon d-flex justify-content-center align-items-center">
+                    <div class="icons">
+                        <i class="fa-solid fa-moon moon-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <!--End of change theme icon and button up-->
         </div>
     </div>
 
     <!--Javascript-->
     <script src="./js/app.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 </html>

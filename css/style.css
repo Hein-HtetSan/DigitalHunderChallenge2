@@ -4,6 +4,15 @@
     --Black: #1e1f28;
     --Red: #f80834;
     --white: #f1f9f5;
+    --card-background: rgba(255,255,255,0.5);
+    --Font-Family: 'Inter', sans-serif;
+    --Open-sans: 'Open Sans', sans-serif;
+}
+.light-theme{
+    --Black: #f1f9f5;
+    --Red: #f80834;
+    --card-background: rgba(0,0,0,0.1);
+    --white: #1e1f28;
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
 }
@@ -16,7 +25,7 @@
 }
 
 body{
-    background: vard(--Black);
+    background: var(--Black);
 }
 
 .h-11vh{
@@ -37,24 +46,37 @@ body{
 .h-80vh{
     height: 80vh;
 }
+.h-89vh{
+    height: 89vh;
+}
 
 /*This is Navbar Styling*/
+.mynavbar{
+    background-color: var(--Black);
+}
+
+.container-fluid{
+    background-color: var(--Black);
+}
 
 .dh-brand{
     font-family: var(--Open-sans);
+    font-size: 17px;
     font-weight: 600;
+    color: var(--white);
 }
 
 .dh-logo{
-    transform: scale(.7);
+    transform: scale(.8);
 }
+
 
 .navbar-links > a{
     text-decoration: none;
     font-family: var(--Open-sans);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    color: var(--Black);
+    color: var(--white);
     position: relative;
     transition: .3s ease-in;
 }
@@ -91,13 +113,13 @@ body{
     padding-top: 15px;
     font-family: var(--Open-sans);
     font-weight: 600;
-    font-size: 18px;
-    color: var(--Black);
+    font-size: 15px;
+    color: var(--white);
     cursor: pointer;
 }
 
 .phone > span{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     color: var(--Red);
 }
@@ -105,4 +127,146 @@ body{
     text-decoration: underline;
 }
 
+.page-one{
+    font-family: var(--Open-sans);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--Red);
+    position: relative;
+}
+.page-one::before{
+    position: absolute;
+    content: '';
+    top: 39px;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--Red);
+}
+.page-one::after{
+    content: '06';
+    position: absolute;
+    top: 41px;
+    right: 0;
+    font-family: var(--Open-sans);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+}
+
 /*End of styling navbar*/
+
+/*Change theme*/
+.change-icon{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.change-icon:hover{
+    color: var(--Red);
+}
+.icons > .sun-icon{
+    color: var(--Black);
+    cursor: pointer;
+}
+.icons > .moon-icon{
+    color: var(--Black);
+    cursor: pointer;
+}
+
+/*End of Change theme*/
+
+
+/*Page one*/
+.brand-name > h5{
+    writing-mode: tb-rl;
+    text-orientation: sideways;
+    color: var(--white);
+    transform: rotate(180deg);
+    font-family: var(--Open-sans);
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--Red);
+    font-weight: 600;
+    position: relative;
+}
+.brand-name > h5::before{
+    position: absolute;
+    content: '';
+    top: -120px;
+    left: 10px;
+    width: 3px;
+    height: 100px;
+    background-color: var(--Red);
+}
+.info{
+    color: var(--white);
+}
+.info > h2{
+    font-family: var(--Open-sans);
+    font-size: 40px;
+    font-weight: 700;
+}
+.info >  h5{
+    font-family: var(--Open-sans);
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: 2px ;
+    position: relative
+}
+.info > h5::before{
+    position: absolute;
+    content: '';
+    top: 40px;
+    left: 0;
+    width: 40%;
+    height: 5px;
+    background-color: var(--Red);
+}
+.info > p{
+    font-family: var(--Open-sans);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.info > .page-one-btn{
+    width: 170px;
+    height: 50px;
+    border: 2px solid var(--Red);
+    background-color: var(--Red);
+    font-family: var(--Open-sans);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--white);
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+.info > .page-one-btn:hover{
+    background: none;
+    color: var(--white);
+}
+.dh-logo2{
+    transform: scale(.8);
+}
+/*End of Page One info*/
+
+
+@media screen and (max-width: 380px) {
+    .mynavbar-links{
+        display: none;
+    }
+    .mycontact-links{
+        display: none;
+    }
+    .mypage-one{
+        display:none;
+    }
+}
