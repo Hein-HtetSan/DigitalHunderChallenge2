@@ -11,7 +11,7 @@
 .light-theme{
     --Black: #f1f9f5;
     --Red: #f80834;
-    --card-background: rgba(0,0,0,0.1);
+    --card-background: rgb(252, 252, 255);
     --white: #1e1f28;
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
@@ -436,7 +436,7 @@ body{
         height: 50vh;
     }
     .h-89vh-lg{
-        height: 81vh;
+        height: 65vh;
     }
 }
 
@@ -457,6 +457,6 @@ body{
         height: 50vh;
     }
     .h-89vh-lg{
-        height: 81vh;
+        height: 65vh;
     }
 }
