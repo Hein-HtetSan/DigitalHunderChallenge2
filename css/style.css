@@ -63,9 +63,7 @@ body{
 .h-89vh{
     height: 89vh;
 }
-.h-89vh-lg{
-    height: 89vh;
-}
+
 
 .h-89vh-page-one-logo{
     height: 89vh;
@@ -435,9 +433,7 @@ body{
     .h-50vh-lg{
         height: 50vh;
     }
-    .h-89vh-lg{
-        height: 65vh;
-    }
+    
 }
 
 @media screen and (max-width: 380px) {
@@ -456,7 +452,5 @@ body{
     .h-40vh-page-two{
         height: 50vh;
     }
-    .h-89vh-lg{
-        height: 65vh;
-    }
+    
 }
