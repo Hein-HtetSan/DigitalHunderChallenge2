@@ -551,7 +551,9 @@ body{
     .h-50vh-lg{
         height: 50vh;
     }
-    
+    .h-50vh-lg{
+        height: 30vh;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -570,5 +572,7 @@ body{
     .h-40vh-page-two{
         height: 50vh;
     }
-    
+    .h-50vh-lg{
+        height: 30vh;
+    }
 }
