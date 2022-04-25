@@ -532,6 +532,41 @@ body{
 
 /*End of page three info*/
 
+/*Page four info*/
+.page-four{
+    background-color: var(--Red);
+}
+.page-four-header > h2 {
+    font-family: var(--Open-sans);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--course-color);
+}
+.join-now-btn{
+    width: 160px;
+    height: 60px;
+    border: 2px solid var(--Red);
+    background: var(--white);
+    color: var(--Black);
+    font-family: var(--Open-sans);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+.join-now-btn > span{
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.join-now-btn:hover{
+    background-color: var(--Black);
+    color: var(--white);
+}
+.join-now-btn:hover > span {
+    opacity: 1;
+}
+/*End of page four info*/
+
 @media screen and (max-width: 780px) {
     .mynavbar-links{
         display: none;
@@ -554,6 +589,9 @@ body{
     .h-50vh-lg{
         height: 33vh;
     }
+    .h-30vh-page-four{
+        height: 70vh;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -574,5 +612,8 @@ body{
     }
     .h-50vh-lg{
         height: 33vh;
+    }
+    .h-30vh-page-four{
+        height: 70vh;
     }
 }
