@@ -8,6 +8,7 @@ iconChange.onclick = function() {
         iconChange.innerHTML = `<i class="fa-solid fa-moon moon-icon"></i>`
         logo1.src = "./img/logo-for-light.svg"
         logo2.src = "./img/logo-for-light.svg"
+        localStorage.setItem('sun', JSON.stringify(iconChange.innerHTML))
         localStorage.setItem('logo11', JSON.stringify(logo1.src))
         localStorage.setItem('logo22', JSON.stringify(logo2.src))
     } else {

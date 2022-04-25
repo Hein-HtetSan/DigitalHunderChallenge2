@@ -4,7 +4,7 @@
     --Black: #1e1f28;
     --Red: #f80834;
     --white: #f1f9f5;
-    --card-background: rgba(255,255,255,0.5);
+    --card-background: rgba(255,255,255,0.1);
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
 }
@@ -51,6 +51,9 @@ body{
 .h-50vh{
     height: 50vh;
 }
+.h-60vh{
+    height: 60vh;
+}
 .h-75vh{
     height: 75vh;
 }
@@ -60,12 +63,18 @@ body{
 .h-89vh{
     height: 89vh;
 }
+.h-89vh-lg{
+    height: 89vh;
+}
 
 .h-89vh-page-one-logo{
     height: 89vh;
 }
 .h-40vh-page-two{
     height: 25vh;
+}
+.h-50vh-lg{
+    height: 34vh;
 }
 /*This is Navbar Styling*/
 .mynavbar{
@@ -84,7 +93,7 @@ body{
 }
 
 .dh-logo{
-    transform: scale(.8);
+    transform: scale(.7);
 }
 
 
@@ -209,7 +218,7 @@ body{
     transform: rotate(180deg);
     font-family: var(--Open-sans);
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     color: var(--Red);
     font-weight: 600;
     position: relative;
@@ -221,6 +230,7 @@ body{
     left: 10px;
     width: 3px;
     height: 100px;
+    border-radius: 10px;
     background-color: var(--Red);
 }
 .info{
@@ -241,10 +251,11 @@ body{
 .info > h5::before{
     position: absolute;
     content: '';
-    bottom: -20px;
+    bottom: -18px;
     left: 0;
     width: 40%;
     height: 5px;
+    border-radius: 10px;
     background-color: var(--Red);
 }
 .info > p{
@@ -311,9 +322,97 @@ body{
     content: '';
     bottom: -13px;
     left: 0;
-    width: 20%;
+    width: 80px;
     height: 4px;
+    border-radius: 10px;
     background-color: var(--Red);
+}
+
+.card{
+    background: var(--card-background) !important;
+}
+.card-lg{
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+.card-lg::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--Red);
+    transition: .7s ease-in-out;
+}
+.card-lg:hover::before{
+    width: 100%;
+}
+
+.card > .card-body > .icon-computer{
+    font-size: 32px;
+    color: var(--white);
+}
+.card > .card-body > .card-title{
+    color: var(--white);
+    font-family: var(--Open-sans);
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+}
+.card > .card-body > .card-title::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 50px;
+    height: 4px;
+    left: 0;
+    bottom: -9px;
+    border-radius: 10px;
+    background: var(--Red);
+}
+.card > .card-body > .card-text{
+    font-family: var(--Open-sans);
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 600;
+}
+.card > .card-body > .card-btn{
+    width: 130px;
+    height: 45px;
+    border: 2px solid var(--Red);
+    background-color: var(--Red);
+    font-family: var(--Open-sans);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--white);
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    padding: 5px;
+}
+.card > .card-body > .card-btn:hover{
+    background: none;
+    color: var(--white);
+}
+.card > .card-body > .card-btn-right{
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.card > .card-body > .card-btn-right:hover{
+    color: var(--Red);
+}
+.card-sm{
+    position: relative;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+}
+.card-sm::before{
+    content: '';
 }
 /*End of Page two info*/
 
@@ -333,6 +432,12 @@ body{
     .h-40vh-page-two{
         height: 50vh;
     }
+    .h-50vh-lg{
+        height: 50vh;
+    }
+    .h-89vh-lg{
+        height: 81vh;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -350,5 +455,8 @@ body{
     }
     .h-40vh-page-two{
         height: 50vh;
+    }
+    .h-89vh-lg{
+        height: 81vh;
     }
 }
