@@ -4,14 +4,26 @@
     --Black: #1e1f28;
     --Red: #f80834;
     --white: #f1f9f5;
+    --btn-white: #f1f9f5;
     --card-background: rgba(255,255,255,0.1);
+    --card-background-course: #3f3f3f;
+    --card-hover-background: rgba(255,255,255,0.2);
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
+    --card-course-background: #f80834;
+    --card-course-background-hover: #fb365a;
+    --course-color: #fff;
 }
 .light-theme{
+    --course-color: #fff;
+    --btn-white: #f1f9f5;
     --Black: #fff;
     --Red: #f80834;
-    --card-background: #f1f9f5ff;
+    --card-background-course: #dfdfdf;
+    --card-hover-background: #fff;
+    --card-course-background: #f80834;
+    --card-course-background-hover: #fb365a;
+    --card-background: #f1f9f5;
     --white: #1e1f28;
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
@@ -45,6 +57,9 @@ body{
 .h-25vh{
     height: 25vh;
 }
+.h-30vh{
+    height: 30vh;
+}
 .h-40vh{
     height: 40vh;
 }
@@ -70,6 +85,9 @@ body{
 }
 .h-40vh-page-two{
     height: 25vh;
+}
+.h-40vh-page-three{
+    height: 35vh;
 }
 .h-50vh-lg{
     height: 34vh;
@@ -271,7 +289,7 @@ body{
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
-    color: var(--white);
+    color: var(--btn-white);
     border-radius: 10px;
     transition: .4s ease-in-out;
 }
@@ -328,6 +346,9 @@ body{
 
 .card{
     background: var(--card-background) !important;
+}
+.card:hover{
+    background: var(--card-hover-background) !important;
 }
 .card-lg{
     cursor: pointer;
@@ -387,7 +408,7 @@ body{
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
-    color: var(--white);
+    color: var(--btn-white);
     border-radius: 10px;
     transition: .4s ease-in-out;
     padding: 5px;
@@ -411,8 +432,105 @@ body{
 }
 .card-sm::before{
     content: '';
+    position: absolute;
+    top: 10px;
+    border-radius: 10px;
+    left: 0;
+    width: 5px;
+    height: 0px;
+    background-color: var(--Red);
+    transition: .7s ease-in-out;
+}
+.card-sm:hover::before{
+    height: 47px;
 }
 /*End of Page two info*/
+
+/*Page three info*/
+.title > div{
+    font-family: var(--Open-sans);
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--white);
+    position: relative;
+}
+.title > div::before{
+    position: absolute;
+    display: block;
+    content: '';
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background: var(--Red);
+}
+.title-span{
+    z-index: 1;
+}
+
+.title > p{
+    font-family: var(--Open-sans);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: var(--white);
+    position: relative;
+}
+
+.title > p::before{
+    position: absolute;
+    content: '';
+    bottom: -13px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--Red);
+}
+.course{
+    font-family: var(--Open-sans);
+    font-size: 25px !important;
+    font-weight: 700;
+    color: var(--course-color) !important;
+}
+.box-icon{
+    font-size: 25px;
+    color: var(--course-color);
+}
+.card-course{
+    background: var(--card-course-background) !important;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.card-course:hover{
+    background: var(--card-course-background-hover) !important;
+}
+.card-course::before{
+    overflow: hidden;
+    position:absolute;
+    content: 'Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been  the';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--card-background-course);
+    text-align: center;
+    font-family: var(--Open-sans);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 30px;
+    padding: 60px 8px 0px 8px;
+    border: 1px solid var(--card-background-course);
+    transition: .7s ease-in-out;
+    transform: translateY(253px);
+}
+.card-course:hover::before{
+    transform: translateY(0px);
+}
+
+/*End of page three info*/
 
 @media screen and (max-width: 780px) {
     .mynavbar-links{
