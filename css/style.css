@@ -9,9 +9,9 @@
     --Open-sans: 'Open Sans', sans-serif;
 }
 .light-theme{
-    --Black: #f1f9f5;
+    --Black: #fff;
     --Red: #f80834;
-    --card-background: rgb(252, 252, 255);
+    --card-background: #f1f9f5ff;
     --white: #1e1f28;
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
@@ -436,7 +436,7 @@ body{
         height: 50vh;
     }
     .h-89vh-lg{
-        height: 65vh;
+        height: 75vh;
     }
 }
 
@@ -457,6 +457,6 @@ body{
         height: 50vh;
     }
     .h-89vh-lg{
-        height: 65vh;
+        height: 75vh;
     }
 }
