@@ -10,10 +10,7 @@
     <!--Css-->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link Swiper's CSS -->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!--Fontawesome Icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Bootstrap Css-->
@@ -395,7 +392,7 @@
             <div class="col-12 col-md-12 col-lg-12 h-20vh-slide mt-5">
                 <div class="page-three-info">
                     <div class="page-three-header d-flex justify-content-between align-items-centers">
-                        <div class="title h-40vh-page-three position-relative w-75 p-3">
+                        <div class="title  position-relative w-75 p-3">
                             <div class="company-brand">
                                 <span>Reviews</span>
                             </div>
@@ -405,16 +402,100 @@
                                 standard dummy text <br> ever since  the 1500s, when an unknown
                             </p>
                         </div>
-                        <div class="page-number h-40vh pt-3">
+                        <div class="page-number pt-3">
                             <p class="page-one">04</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-12 h-70vh mb-5 d-none d-md-none d-lg-block">
+            <div class="col-12 col-md-12 col-lg-12 h-80vh mb-5 d-none d-md-none d-lg-block position-relative">
                 <div class="row">
                     <div class="swiper mySwiper h-80vh p-5">
                         <div class="swiper-wrapper w-100">
+                            <div class="swiper-slide w-50 p-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between align-items-center">
+                                            <div class="content-head">
+                                                <div class="mb-3 in-3">Digital Hunter</div>
+                                                <p>Front-end Development</p>
+                                            </div>
+                                            <div class="user-img">
+                                                <img class="img-fluid" src="./img/icon-ellipse.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown
+                                            printer took a galley of type and scrambled it to make a type
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-50 p-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between align-items-center">
+                                            <div class="content-head">
+                                                <div class="mb-3 in-3">Digital Hunter</div>
+                                                <p>Front-end Development</p>
+                                            </div>
+                                            <div class="user-img">
+                                                <img class="img-fluid" src="./img/icon-ellipse.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown
+                                            printer took a galley of type and scrambled it to make a type
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-50 p-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between align-items-center">
+                                            <div class="content-head">
+                                                <div class="mb-3 in-3">Digital Hunter</div>
+                                                <p>Front-end Development</p>
+                                            </div>
+                                            <div class="user-img">
+                                                <img class="img-fluid" src="./img/icon-ellipse.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown
+                                            printer took a galley of type and scrambled it to make a type
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-50 p-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between align-items-center">
+                                            <div class="content-head">
+                                                <div class="mb-3 in-3">Digital Hunter</div>
+                                                <p>Front-end Development</p>
+                                            </div>
+                                            <div class="user-img">
+                                                <img class="img-fluid" src="./img/icon-ellipse.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown
+                                            printer took a galley of type and scrambled it to make a type
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="swiper-slide w-50 p-5">
                                 <div class="card">
                                     <div class="card-body">
@@ -482,6 +563,7 @@
                 })
     </script>
     <script>
+        // init Swiper:
         var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
         spaceBetween: 0,
@@ -496,7 +578,8 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-});
+    });
+
     </script>
     
 </body>

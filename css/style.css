@@ -29,7 +29,7 @@
     --white: #1e1f28;
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
-    --grey-color: #e4e4e4;
+    --grey-color: #817f7f;
     --angles-up-icon-color: #fff;
 }
 
@@ -103,7 +103,7 @@ body{
     height: 34vh;
 }
 .h-20vh-slide{
-    height: 30vh;
+    height: 20vh;
 }
 /*This is Navbar Styling*/
 .mynavbar{
@@ -627,6 +627,34 @@ body{
 .join-now-btn:hover > span {
     opacity: 1;
 }
+ /* change the size of the bullet and active color */
+
+.swiper-pagination-bullet {
+    width: 33px !important;
+    height: 4.5px !important;
+    border-radius: 1px !important;
+    display: inline-block !important;
+    background: var(--Red) !important;
+    opacity: .3 !important;
+}
+.swiper-pagination-bullet-active{
+    background: var(--Red) !important;
+    opacity: 1 !important;
+}
+.swiper-button-next, .swiper-button-prev {
+    opacity: .4 !important;
+    color: var(--Red) !important;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    opacity: 1 !important;
+    color: var(--Red) !important;
+}
+
+    /* change color of previous bullet to white*/
+
+
+
+
 /*End of page four info*/
 
 /*Page five info*/
@@ -655,7 +683,7 @@ body{
 }
 .content-head > .in-3[data-scroll="in"]::before{
     width: 80px;
-    transition-delay: 1s;
+    transition-delay: .7s;
 }
 .content-head > p{
     font-family: var(--Open-sans);
@@ -668,11 +696,7 @@ body{
     padding-bottom: 20px;
     transform: scale(.6);
 }
-.swiper-pagination{
-    padding-top: 10px;
-    width: 100px;
-    height: 20px;
-}
+
 /*End of Page five info*/
 
 @media screen and (max-width: 780px) {
