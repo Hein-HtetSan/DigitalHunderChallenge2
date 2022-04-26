@@ -14,6 +14,7 @@
     --card-course-background-hover: #fb365a;
     --course-color: #fff;
     --angles-up-icon-color: #000;
+    --grey-color: #e4e4e4;
 }
 .light-theme{
     --course-color: #fff;
@@ -28,6 +29,7 @@
     --white: #1e1f28;
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
+    --grey-color: #e4e4e4;
     --angles-up-icon-color: #fff;
 }
 
@@ -74,6 +76,9 @@ body{
 .h-60vh{
     height: 60vh;
 }
+.h-70vh{
+    height: 70vh;
+}
 .h-75vh{
     height: 75vh;
 }
@@ -96,6 +101,9 @@ body{
 }
 .h-50vh-lg{
     height: 34vh;
+}
+.h-20vh-slide{
+    height: 30vh;
 }
 /*This is Navbar Styling*/
 .mynavbar{
@@ -621,6 +629,52 @@ body{
 }
 /*End of page four info*/
 
+/*Page five info*/
+.card{
+    cursor: pointer;
+}
+.content-head > .in-3{
+    font-family: var(--Open-sans);
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: var(--white);
+    position: relative;
+}
+
+.content-head > .in-3::before{
+    position: absolute;
+    content: '';
+    bottom: -13px;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--Red);
+    transition: .7s ease;
+}
+.content-head > .in-3[data-scroll="in"]::before{
+    width: 80px;
+    transition-delay: 1s;
+}
+.content-head > p{
+    font-family: var(--Open-sans);
+    font-size: 16px;
+    color: var(--grey-color);
+    font-weight: 500;
+    letter-spacing: .7px;
+}
+.user-img{
+    padding-bottom: 20px;
+    transform: scale(.6);
+}
+.swiper-pagination{
+    padding-top: 10px;
+    width: 100px;
+    height: 20px;
+}
+/*End of Page five info*/
+
 @media screen and (max-width: 780px) {
     .mynavbar-links{
         display: none;
@@ -644,7 +698,10 @@ body{
         height: 33vh;
     }
     .h-30vh-page-four{
-        height: 60vh;
+        height:55vh;
+    }
+    .h-20vh-slide{
+        height: 40vh;
     }
 }
 
@@ -668,6 +725,9 @@ body{
         height: 33vh;
     }
     .h-30vh-page-four{
-        height: 60vh;
+        height: 55vh;
+    }
+    .h-20vh-slide{
+        height: 40vh;
     }
 }
