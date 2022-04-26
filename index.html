@@ -9,6 +9,11 @@
     <link rel="icon" href="./img/logo-for-dark copy.svg">
     <!--Css-->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!--Fontawesome Icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Bootstrap Css-->
@@ -16,10 +21,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
         <div class="row">
             <!--This is Navbar-->
-            <div class="mynavbar col-12 col-md-12 col-lg-12 myborder-bottom h-11vh">
+            <div class="mynavbar col-12 col-md-12 col-lg-12 myborder-bottom h-11vh  shadow-sm">
                 <div class="row">
                     <!--Logo and Brand-->
                     <div class="col-5 col-md-2 col-lg-2 d-flex h-11vh ">
@@ -36,7 +41,7 @@
                             <a href="#about" class="about">About</a>
                             <a href="#content" class="content">Content</a>
                             <a href="#blog" class="blog">Blog</a>
-                            <a href="#blog" class="blog">Course</a>
+                            <a href="#course" class="home">Course</a>
                         </div>
                     </div>
                     <!--End of Navigation-->
@@ -61,7 +66,7 @@
             <!--Page one Info-->
             <div class="col-1 col-md-1 col-lg-1 d-flex align-items-start justify-content-center h-89vh">
                 <div class="brand-name pt-5 mt-5 p-3 p-sm-3">
-                    <h5>
+                    <h5 class="in-1">
                         Digital Hunter
                     </h5>
                 </div>
@@ -69,7 +74,7 @@
             <div class="col-11 col-md-6 col-lg-6 h-89vh d-flex align-items-center justify-content-center">
                 <div class="info p-2 p-lg-5">
                     <h2>Digital Hunter</h2>
-                    <h5>Front-end web development</h5>
+                    <h5 class="in-2">Front-end web development</h5>
                     <p class="mt-4 mb-4">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industry's
@@ -84,27 +89,41 @@
                     <img class="img-fluid dh-logo2" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">
                 </div>
             </div>
-            <!--End of Page one Info-->
-            <!--Change Theme Icon and Button Up-->
-            <div class="col-1 col-md-1 col-lg-1 fixed-bottom h-11vh">
-                <div class="change-icon d-flex justify-content-center align-items-center">
-                    <div class="icons">
-                        <i class="fa-solid fa-moon moon-icon"></i>
-                    </div>
-                </div>
-            </div>
-            <!--End of change theme icon and button up-->
         </div>
     </div>
+    <!--End of Page one Info-->
+            <!--Change Theme Icon and Button Up-->
+            <div class="fixed-bottom  d-flex justify-content-between w-100 p-2">
+                    <div class=" h-10vh ">
+                        <div class="change-icon d-flex align-items-center justify-content-center">
+                            <div class="icons">
+                                <i class="fa-solid fa-moon moon-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" h-10vh ">
+                        <div class="angles-icon d-flex align-items-center justify-content-center">
+                            <div class="icons">
+                                <a href="#home">
+                                    <i class="fa-solid fa-angles-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--End of change theme icon and button up-->
+    
     <!--Page two info-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="blog">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12 h-50vh-lg">
                 <div class="page-two-info">
                     <div class="page-two-header d-flex justify-content-between align-items-centers">
                         <div class="title h-40vh-page-two position-relative w-75 p-3">
-                            <h2><span class="title-span">Digital Hunter</span></h2>
-                            <p>
+                            <div class="company-brand">
+                                <span>Digital Hunter</span>
+                            </div>
+                            <p class="in-3">
                                 Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. <br> Lorem Ipsum has been  the industry's
                                 standard dummy text <br> ever since  the 1500s, when an unknown
@@ -126,7 +145,7 @@
                                 <div class="icon-computer">
                                     <i class="fa-solid fa-display"></i>
                                 </div>
-                                <div class="card-title mb-3">Digital Hunter</div>
+                                <div class="card-title mb-3 in-4">Digital Hunter</div>
                                 <div class="card-text mb-3">
                                     Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum has been  the industry's
@@ -154,7 +173,7 @@
                                 <div class="icon-computer">
                                     <i class="fa-solid fa-display"></i>
                                 </div>
-                                <div class="card-title mb-3">Digital Hunter</div>
+                                <div class="card-title mb-3 in-4">Digital Hunter</div>
                                 <div class="card-text mb-3">
                                     Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum has been  the industry's
@@ -182,7 +201,7 @@
                                 <div class="icon-computer">
                                     <i class="fa-solid fa-display"></i>
                                 </div>
-                                <div class="card-title mb-3">Digital Hunter</div>
+                                <div class="card-title mb-3 in-4">Digital Hunter</div>
                                 <div class="card-text mb-3">
                                     Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum has been  the industry's
@@ -210,14 +229,16 @@
     </div>
     <!--End of Page two info-->
     <!--Page Three info-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="course">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12 h-30vh mt-5 mb-3">
                 <div class="page-three-info">
                     <div class="page-three-header d-flex justify-content-between align-items-centers">
                         <div class="title h-40vh-page-three position-relative w-75 p-3">
-                            <div><span class="title-span">Digital Hunter</span></div>
-                            <p>
+                            <div class="company-brand">
+                                <span>Digital Hunter</span>
+                            </div>
+                            <p class="in-3">
                                 Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. <br> Lorem Ipsum has been  the industry's
                                 standard dummy text <br> ever since  the 1500s, when an unknown
@@ -331,7 +352,7 @@
     <!--Page Four Info-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-12 col-lg-12  h-30vh-page-four page-four p-4">
+            <div class="col-12 col-md-12 col-lg-12  h-30vh-page-four page-four p-4 mb-3">
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12 page-four-header mb-3">
                         <h2>
@@ -368,13 +389,103 @@
     </div>
     <!--End of Page Four Info-->
 
+    <!--Page five Info-->
+    <div class="container-fluid" id="about">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 h-30vh mt-5 mb-3">
+                <div class="page-three-info">
+                    <div class="page-three-header d-flex justify-content-between align-items-centers">
+                        <div class="title h-40vh-page-three position-relative w-75 p-3">
+                            <div class="company-brand">
+                                <span>Reviews</span>
+                            </div>
+                            <p class="in-3">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. <br> Lorem Ipsum has been  the industry's
+                                standard dummy text <br> ever since  the 1500s, when an unknown
+                            </p>
+                        </div>
+                        <div class="page-number h-40vh pt-3">
+                            <p class="page-one">04</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 h-80vh">
+                <div class="row">
+                    <div class="swiper mySwiper h-80vh p-5">
+                        <div class="swiper-wrapper w-100">
+                            <div class="swiper-slide w-50 p-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <div class="card-title mb-3 in-4">Digital Hunter</div>
+                                            </div>
+                                            <div class="card-text">
+                                                Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's
+                                                standard dummy text ever since the 1500s, when an unknown
+                                                printer took a galley of type and scrambled it to make a type
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide w-50 p-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="card-title mb-3 in-4">Digital Hunter</div>
+                                        </div>
+                                        <div class="card-text">
+                                            Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown
+                                            printer took a galley of type and scrambled it to make a type
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Page five Info-->
+
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/scroll-out.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/theme.js"></script>
+    <script src="./js/swiper.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-
+        ScrollOut({
+                    targets: 'h5, .in-3, .in-4, .angles-icon'
+                })
     </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+});
+    </script>
+    
 </body>
 </html>
