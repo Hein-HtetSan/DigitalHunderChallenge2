@@ -90,6 +90,7 @@ body{
 }
 
 
+
 .h-89vh-page-one-logo{
     height: 89vh;
 }
@@ -657,11 +658,24 @@ body{
     opacity: 1 !important;
     color: var(--Red) !important;
 }
-
-    /* change color of previous bullet to white*/
-
-
-
+.join-now-btn-p5{
+    width: 170px;
+    height: 50px;
+    border: 2px solid var(--Red);
+    background-color: var(--Red);
+    font-family: var(--Open-sans);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--btn-white);
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.join-now-btn-p5:hover{
+    background: none;
+    color: var(--white);
+}
 
 /*End of page four info*/
 
@@ -737,7 +751,7 @@ body{
         transform: scale(.8);
     }
     .h-89vh-slide2{
-        height: 65vh;
+        height: 60vh;
     }
 }
 
@@ -771,6 +785,6 @@ body{
         transform: scale(.8);
     }
     .h-89vh-slide2{
-        height: 65vh;
+        height: 60vh;
     }
 }
