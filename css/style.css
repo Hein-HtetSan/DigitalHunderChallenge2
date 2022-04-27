@@ -15,6 +15,7 @@
     --course-color: #fff;
     --angles-up-icon-color: #000;
     --grey-color: #e4e4e4;
+    --input-color: #e4e4e4;
 }
 .light-theme{
     --course-color: #fff;
@@ -30,6 +31,7 @@
     --Font-Family: 'Inter', sans-serif;
     --Open-sans: 'Open Sans', sans-serif;
     --grey-color: #817f7f;
+    --input-color: #e4e4e4;
     --angles-up-icon-color: #fff;
 }
 
@@ -126,7 +128,7 @@ body{
 }
 
 .dh-logo{
-    transform: scale(.7);
+    transform: scale(.5);
 }
 
 
@@ -756,6 +758,41 @@ body{
     grid-area: box2;
     background: var(--card-background);
 }
+.form-header{
+    font-family: var(--Open-sans);
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white);
+}
+.first-name, .last-name, .email{
+    width: 100%;
+    height: 50px;
+    background: var(--input-color);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    text-indent: 10px;
+    font-family: var(--Open-sans);
+    font-size: 17px;
+    color: var(--black);
+}
+.first-name::placeholder, .last-name::placeholder, .email::placeholder{
+    font-family: var(--Open-sans);
+    color: var(--black);
+    font-size: 17px;
+}
+.text-area{
+    width: 100%;
+    height: 70px;
+    background: var(--input-color);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    text-indent: 10px;
+    font-family: var(--Open-sans);
+    font-size: 17px;
+    color: var(--black);
+}
 /*End of contact page styling*/
 
 @media screen and (max-width: 780px) {
@@ -809,6 +846,9 @@ body{
     .h-39vh{
         height: 26vh;
     }
+    .dh-logo{
+        transform: scale(.8);
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -838,7 +878,7 @@ body{
     }
     .user-img{
         padding-bottom: 20px;
-        transform: scale(.8);
+        transform: scale(.7);
     }
     .h-89vh-slide2{
         height: 59vh;
@@ -858,5 +898,8 @@ body{
     }
     .h-39vh{
         height: 26vh;
+    }
+    .dh-logo{
+        transform: scale(.7);
     }
 }
