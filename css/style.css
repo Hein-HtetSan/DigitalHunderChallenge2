@@ -718,6 +718,22 @@ body{
 
 /*End of Page five info*/
 
+/*Page six styling*/
+.company-brand-name{
+    font-family: var(--Open-sans);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--white);
+}
+.company-info{
+    font-family: var(--Open-sans);
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/*End of page six styling*/
+
 @media screen and (max-width: 780px) {
     .mynavbar-links{
         display: none;
