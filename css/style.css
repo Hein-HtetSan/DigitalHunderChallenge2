@@ -744,14 +744,14 @@ body{
         height:55vh;
     }
     .h-20vh-slide{
-        height: 30vh;
+        height: 24vh;
     }
     .user-img{
         padding-bottom: 20px;
         transform: scale(.8);
     }
     .h-89vh-slide2{
-        height: 55vh;
+        height: 65vh;
     }
 }
 
@@ -778,13 +778,13 @@ body{
         height: 55vh;
     }
     .h-20vh-slide{
-        height: 30vh;
+        height: 24vh;
     }
     .user-img{
         padding-bottom: 20px;
         transform: scale(.8);
     }
     .h-89vh-slide2{
-        height: 55vh;
+        height: 65vh;
     }
 }
