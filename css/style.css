@@ -67,6 +67,9 @@ body{
 .h-30vh{
     height: 30vh;
 }
+.h-39vh{
+    height: 39vh;
+}
 .h-40vh{
     height: 40vh;
 }
@@ -734,6 +737,27 @@ body{
 }
 /*End of page six styling*/
 
+/*contact page styling*/
+.contact{
+    width: 999px;
+    height: 555px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "box1 box2";
+    position: relative;
+    border: none;
+}
+.map-info{
+    grid-area: box1;
+}
+.contact-form{
+    grid-area: box2;
+    background: var(--card-background);
+}
+/*End of contact page styling*/
+
 @media screen and (max-width: 780px) {
     .mynavbar-links{
         display: none;
@@ -769,6 +793,19 @@ body{
     .h-89vh-slide2{
         height: 59vh;
     }
+    .contact{
+        width: 999px;
+        height: 555px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr  1.5fr;
+        grid-template-areas: 
+            "box1"
+            "box2";
+        position: relative;
+        border: none;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -802,5 +839,18 @@ body{
     }
     .h-89vh-slide2{
         height: 59vh;
+    }
+    .contact{
+        width: 999px;
+        height: 555px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr  1.5fr;
+        grid-template-areas: 
+            "box1"
+            "box2";
+        position: relative;
+        border: none;
+        border-radius: 10px;
     }
 }
