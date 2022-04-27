@@ -68,7 +68,7 @@ body{
     height: 30vh;
 }
 .h-39vh{
-    height: 39vh;
+    height: 33vh;
 }
 .h-40vh{
     height: 40vh;
@@ -732,7 +732,7 @@ body{
     font-family: var(--Open-sans);
     font-size: 14px;
     color: var(--white);
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 /*End of page six styling*/
@@ -798,13 +798,16 @@ body{
         height: 555px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr  1.5fr;
+        grid-template-rows: 1.5fr  2.2fr;
         grid-template-areas: 
             "box1"
             "box2";
         position: relative;
         border: none;
         border-radius: 10px;
+    }
+    .h-39vh{
+        height: 26vh;
     }
 }
 
@@ -845,12 +848,15 @@ body{
         height: 555px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr  1.5fr;
+        grid-template-rows: 1.5fr  2.2fr;
         grid-template-areas: 
             "box1"
             "box2";
         position: relative;
         border: none;
         border-radius: 10px;
+    }
+    .h-39vh{
+        height: 26vh;
     }
 }
