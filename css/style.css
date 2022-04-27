@@ -627,6 +627,14 @@ body{
 .join-now-btn:hover > span {
     opacity: 1;
 }
+.caret-right{
+    animation: animated .5s linear infinite;
+}
+@keyframes animated {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(10px);}
+    100% {transform: translateX(0px);}
+}
  /* change the size of the bullet and active color */
 
 .swiper-pagination-bullet {
@@ -728,6 +736,9 @@ body{
         padding-bottom: 20px;
         transform: scale(.8);
     }
+    .h-89vh-slide2{
+        height: 65vh;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -758,5 +769,8 @@ body{
     .user-img{
         padding-bottom: 20px;
         transform: scale(.8);
+    }
+    .h-89vh-slide2{
+        height: 65vh;
     }
 }
