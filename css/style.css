@@ -16,6 +16,8 @@
     --angles-up-icon-color: #000;
     --grey-color: #e4e4e4;
     --input-color: #e4e4e4;
+    --nearly-black: #2d2d2d;
+    --hover-nearly-black: #f3f6f4;
 }
 .light-theme{
     --course-color: #fff;
@@ -32,6 +34,8 @@
     --Open-sans: 'Open Sans', sans-serif;
     --grey-color: #817f7f;
     --input-color: #e4e4e4;
+    --nearly-black: #f3f6f4;
+    --hover-nearly-black: #FFFAFA;
     --angles-up-icon-color: #fff;
 }
 
@@ -112,6 +116,13 @@ body{
     height: 20vh;
 }
 /*This is Navbar Styling*/
+.navbar-for-lg{
+    display: block;
+}
+.navbar-for-sm-md{
+    display: none;
+    visibility: hidden;
+}
 .mynavbar{
     background-color: var(--Black);
 }
@@ -127,8 +138,11 @@ body{
     color: var(--white);
 }
 
+
 .dh-logo{
-    transform: scale(.5);
+    width: 100px;
+    height: 100px;
+    transform: scale(.6);
 }
 
 
@@ -153,6 +167,10 @@ body{
     border-radius: 10px;
     background: var(--Red);
     transition: .5s ease-in-out;
+}
+.bars{
+    display: none;
+    visibility: hidden;
 }
 
 .navbar-links > a:hover{
@@ -753,6 +771,7 @@ body{
 }
 .map-info{
     grid-area: box1;
+    border: 2px solid var(--Red);
 }
 .contact-form{
     grid-area: box2;
@@ -770,6 +789,7 @@ body{
     background: var(--input-color);
     border: none;
     border-radius: 15px;
+    font-weight: 600;
     outline: none;
     text-indent: 10px;
     font-family: var(--Open-sans);
@@ -780,6 +800,7 @@ body{
     font-family: var(--Open-sans);
     color: var(--black);
     font-size: 17px;
+    font-weight: 600;
 }
 .text-area{
     width: 100%;
@@ -812,6 +833,52 @@ body{
     color: var(--white);
 }
 /*End of contact page styling*/
+
+
+/*Styling Footer Page*/
+.footer-dh-logo{
+    width: 120px;
+    height: 120px;
+    transform: scale(.45);
+}
+
+.footer-brand{
+    font-family: var(--Open-sans);
+    font-size: 25px;
+    font-weight: 700;
+    color:var(--white);
+
+}
+.social-media-icons{
+    width: 250px;
+    color: var(--white);    
+    font-size: 30px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.fa-twitter:hover,.fa-youtube:hover, .fa-github:hover, .fa-paper-plane:hover{
+    color: var(--grey-color);
+}
+.header{
+    font-family: var(--Open-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+}
+.item {
+    text-decoration: none;
+    font-family: var(--Open-sans);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: var(--white);
+}
+.item:hover{
+    color: var(--grey-color);
+    text-decoration: underline;
+}
+
+/*End of styling Footer page*/
 
 @media screen and (max-width: 780px) {
     .mynavbar-links{
@@ -864,8 +931,10 @@ body{
     .h-39vh{
         height: 27vh;
     }
-    .dh-logo{
-        transform: scale(.8);
+    .dh-logo-sm{
+        width: 80px;
+        height: 80px;
+        transform: scale(.85);
     }
     .first-name, .last-name, .email{
     width: 100%;
@@ -879,6 +948,58 @@ body{
     font-size: 17px;
     color: var(--black);
 }
+
+    .navbar-for-lg{
+        display: none;
+        visibility: hidden;
+    }
+    .navbar-for-sm-md{
+        display: block;
+        visibility: visible;
+    }
+    .bar-icon{
+        font-size: 28px;
+        color: var(--white);
+        transition: .4s ease;
+        cursor:pointer;
+    }
+    .bar-icon.show{
+        display: none;
+        visibility: hidden;
+    }
+    .back-icon{
+        display:none;
+        visibility: hidden;
+    }
+    .back-icon.show{
+        display: block;
+        font-size: 28px;
+        color: var(--white);
+        transition: .4s ease;
+        cursor:pointer;
+    }
+    .back-icon:hover{
+        color: var(--Red);
+    }
+    .bar-icon:hover{
+        transform: translateX(-5px);
+        color: var(--grey-color);
+    }
+    .home, .about, .content, .blog {
+        text-decoration: none;
+        color: var(--white);
+        font-family: var(--Open-sans);
+        font-size: 19px;
+        font-weight: 600;
+        padding: 10px 20px;
+        background: var(--nearly-black);
+        transition: .3s ease-in;
+    }
+    .home:hover, .about:hover, .content:hover, .blog:hover{
+        background-color: var(--hover-nearly-black);
+        color: var(--Red);
+        text-indent: 10px;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -929,8 +1050,10 @@ body{
     .h-39vh{
         height: 27vh;
     }
-    .dh-logo{
-        transform: scale(.7);
+    .dh-logo-sm{
+        width: 100px;
+        transform: scale(.85);
+        height: 100px;
     }
     .first-name, .last-name, .email{
         width: 100%;
@@ -944,4 +1067,15 @@ body{
         font-size: 17px;
         color: var(--black);
     }
+    .footer-logo-brand > .footer-logo{
+    transform: scale(.4);
+}
+.navbar-for-lg{
+    display: none;
+    visibility: hidden;
+}
+.navbar-for-sm-md{
+    display: block;
+    visibility: visible;
+}
 }

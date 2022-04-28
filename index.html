@@ -18,17 +18,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid" id="home">
+    <div class="container-fluid " id="home">
         <div class="row">
             <!--This is Navbar-->
-            <div class="mynavbar col-12 col-md-12 col-lg-12 myborder-bottom h-13vh  shadow-sm">
+            <div class="mynavbar navbar-for-lg col-12 col-md-12 col-lg-12 myborder-bottom h-13vh  shadow-sm">
                 <div class="row">
                     <!--Logo and Brand-->
                     <div class="col-5 col-md-2 col-lg-2 d-flex h-11vh align-items-center justify-content-center">
-                            <div class="img-logo">
                                 <img class="img-fluid dh-logo" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">
-                            </div>
-                            <p class="pt-2 dh-brand">
+                            <p class="pt-4 dh-brand">
                                 Digital <br> Hunter
                             </p>
                     </div>
@@ -57,6 +55,31 @@
                     <div class="col-1 col-md-1 col-lg-1 h-11vh mypage-one">
                         <div class="page-number d-flex justify-content-end h-11vh">
                             <p class="page-one">01</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid navbar-for-sm-md">
+                <div class="row d-flex justify-content-between mb-3">
+                    <div class="col-2 col-md-2 col-lg-2 d-flex h-11vh align-items-center justify-content-start">
+                        <img class="img-fluid dh-logo-sm" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">
+                        <p class="pt-4 dh-brand">
+                            Digital <br> Hunter
+                        </p>
+                    </div>
+                    <div class="col-2 col-md-2 col-lg-2 d-flex h-11vh align-items-center justify-content-end">
+                        <i class="fa-solid fa-bars-staggered bar-icon"></i>
+                        <i class="fa-solid fa-right-from-bracket back-icon"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="links-list d-flex flex-column shadow-sm">
+                            <a href="#home" class="home d-block">Home</a>
+                            <a href="#about" class="about d-block">About</a>
+                            <a href="#content" class="content d-block">Contact</a>
+                            <a href="#blog" class="blog d-block">Blog</a>
+                            <a href="#course" class="home d-block">Course</a>
                         </div>
                     </div>
                 </div>
@@ -734,7 +757,62 @@
             </div>
         </div>
     </div>
+    
     <!--End of Page Contact info-->
+
+    <!--Footer Page-->
+    <div class="container-fluid">
+        <div class="row p-5">
+            <div class="col-12 col-md-4 col-lg-4 mb-5">
+                <div class="d-flex align-items-center justify-content-start">
+                    <img class="footer-dh-logo img-fluid" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">
+                    <div class="footer-brand">Digital Hunter</div> 
+                </div>
+                    
+                <div class="social-media-icons d-flex align-items-center justify-content-between ">
+                    <i class="fa-brands fa-twitter ps-5"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 d-flex flex-column mb-3">
+                <h2 class="header">Product</h2>
+                <a href="#" class="item">Database</a>
+                <a href="#" class="item">Auth</a>
+                <a href="#" class="item">Storage</a>
+                <a href="#" class="item">Function</a>
+                <a href="#" class="item">Pricing</a>
+                <a href="#" class="item">Beta</a>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 d-flex flex-column mb-3" >
+                <h2 class="header">Resources</h2>
+                <a href="#" class="item">Database</a>
+                <a href="#" class="item">Auth</a>
+                <a href="#" class="item">Storage</a>
+                <a href="#" class="item">Function</a>
+                <a href="#" class="item">Pricing</a>
+                <a href="#" class="item">Beta</a>
+                <a href="#" class="item">Privacy Policy</a>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 d-flex flex-column mb-3">
+                <h2 class="header">Developers</h2>
+                <a href="#" class="item">Documentation</a>
+                <a href="#" class="item">API References</a>
+                <a href="#" class="item">Guides</a>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 d-flex flex-column mb-3">
+                <h2 class="header">Company</h2>
+                <a href="#" class="item">Blog</a>
+                <a href="#" class="item">Opensources</a>
+                <a href="#" class="item">Careers</a>
+                <a href="#" class="item">Human.txt</a>
+                <a href="#" class="item">Lawyers.txt</a>
+                <a href="#" class="item">Security.txt</a>
+            </div>
+        </div>
+    </div>
+    <!--End of Footer Page-->
 
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
