@@ -10,7 +10,7 @@ iconChange.onclick = function() {
         iconChange.innerHTML = `<i class="fa-solid fa-moon moon-icon"></i>`
         Navbar_logo.src = "./img/logo-for-light.svg"
         Navbar_logo_sm.src = "./img/logo-for-light.svg"
-        PageOne_logo.innerHTML = `<img class="img-fluid dh-logo2" src="./img/logo-for-light.svg" alt="Digital Hunter Logo">`
+        PageOne_logo.innerHTML = `<img class="img-fluid dh-logo2 img1" src="./img/logo-for-light.svg" alt="Digital Hunter Logo">`
         footer_logo.src = "./img/logo-for-light.svg"
         localStorage.setItem('sun', JSON.stringify(iconChange.innerHTML))
         
@@ -18,7 +18,7 @@ iconChange.onclick = function() {
         iconChange.innerHTML = `<i class="fa-solid fa-sun sun-icon"></i>`
         Navbar_logo.src = "./img/logo-for-dark copy.svg"
         Navbar_logo_sm.src = "./img/logo-for-dark copy.svg"
-        PageOne_logo.innerHTML = `<img class="img-fluid dh-logo2" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">`
+        PageOne_logo.innerHTML = `<img class="img-fluid dh-logo2 img1" src="./img/logo-for-dark copy.svg" alt="Digital Hunter Logo">`
         footer_logo.src = "./img/logo-for-dark copy.svg"
         localStorage.setItem('moon', JSON.stringify(iconChange.innerHTML))
         
