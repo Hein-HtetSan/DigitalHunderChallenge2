@@ -920,7 +920,7 @@ body{
         height: 555px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr  2fr;
+        grid-template-rows: 2.8fr  2.9fr;
         grid-template-areas: 
             "box1"
             "box2";
@@ -960,7 +960,7 @@ body{
     .bar-icon{
         font-size: 28px;
         color: var(--white);
-        transition: .4s ease;
+        transition: .2s ease;
         cursor:pointer;
     }
     .bar-icon.show{
@@ -973,17 +973,28 @@ body{
     }
     .back-icon.show{
         display: block;
-        font-size: 28px;
+        visibility: visible;
+        font-size: 25px;
         color: var(--white);
-        transition: .4s ease;
+        transition: .2s ease;
         cursor:pointer;
     }
     .back-icon:hover{
         color: var(--Red);
+        transform: translateX(-3px);
     }
     .bar-icon:hover{
-        transform: translateX(-5px);
+        transform: translateX(-3px);
         color: var(--grey-color);
+    }
+    .links-list{
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: .7s ease-in-out;
+    }
+    .links-list.show{
+        height: 243px;
     }
     .home, .about, .content, .blog {
         text-decoration: none;
