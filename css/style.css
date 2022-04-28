@@ -882,6 +882,9 @@ body{
 /*End of styling Footer page*/
 
 @media screen and (max-width: 780px) {
+    body{
+        width: 100%;
+    }
     .mynavbar-links{
         display: none;
     }
@@ -1015,6 +1018,9 @@ body{
 }
 
 @media screen and (max-width: 380px) {
+    body{
+        width: 100%;
+    }
     .mynavbar-links{
         display: none;
     }
