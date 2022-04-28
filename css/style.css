@@ -256,11 +256,11 @@ body{
 .moon-icon:hover, .angles-up-icon:hover{
     color: var(--Red);
 }
-.icons1 > .sun-icon{
+.icons > .sun-icon{
     color: var(--Black);
     cursor: pointer;
 }
-.icons1 > .moon-icon{
+.icons > .moon-icon{
     color: var(--Black);
     cursor: pointer;
 }
@@ -272,17 +272,17 @@ body{
     opacity: 0;
     transition: .3s ease;
 }
-.angles-icon > .icons2 > a{
+.angles-icon > .icons > a{
     text-decoration: none;
     color: var(--angles-up-icon-color);
 }
-.angles-icon > .icons2{
+.angles-icon > .icons{
     font-size: 25px;
     color: var(--angles-up-icon-color) !important;
     cursor: pointer;
     transition: .2s ease-in;
 }
-.angles-icon > .icons2:hover{
+.angles-icon > .icons:hover{
     transform: translateY(-5px);
 }
 .angles-icon[data-scroll="out"]{
